@@ -9,12 +9,28 @@ router = APIRouter(prefix="/projects", tags=["projects"])
 SEED_PROJECTS = [
   {
     "id": 1,
-    "title": "E-Commerce Microservices Platform",
-    "description": "A robust online shopping backend engineered using FastAPI microservices. It features complete order pipelines, inventory sync controls, and containerized deployment.",
-    "tech_stack": ["FastAPI", "PostgreSQL", "Docker", "Redis"],
-    "image_url": "", # Left empty to display the modern CSS gradient placeholder
-    "demo_url": "https://demo.example.com",
-    "github_url": "https://github.com/your-username/ecommerce-microservices"
+    "title": "Real Estate Startup",
+    "description": "SaaS MVP to ingest property-management emails, classify them, create/update cases, and draft automated responses for human approval.",
+    "tech_stack": ["Next.js", "FastAPI", "Supabase", "TypeScript", "PostgreSQL"],
+    "image_url": "/leasepilot.png", 
+    "demo_url": "https://prop.domec.dev/",
+    "github_url": "https://github.com/germanparra0202/real-estate-professional-project",
+    "roadmap": [
+      "v1.0 Foundation (DONE): Singular account structure, core entities (Properties, Units, Tenants, Leases), decimal financial ledger.",
+      "v1.1 Operational Excellence (IN PROGRESS): Portfolio command center (KPI widgets), automated rent engine, migration import wedge.",
+      "v2.0 Enterprise & Hierarchy (TARGETED): Multi-Type Identity, PM parent-child relationships, scoped RLS access, aggregated KPI rollup."
+    ],
+    "structure": [
+      "apps/web – Next.js + TypeScript frontend (Tailwind-ready)",
+      "apps/api – FastAPI backend with modular router layout",
+      "packages/shared – Shared contracts and utilities (placeholder)"
+    ],
+    "next_steps": [
+      "Wire Postmark inbound webhook to POST /webhooks/email/inbound.",
+      "Add schema/migration tooling for Postgres.",
+      "Implement auth module and shared identity resolver.",
+      "Connect Celery/Redis for async jobs and S3 for storage."
+    ]
   },
   {
     "id": 2,

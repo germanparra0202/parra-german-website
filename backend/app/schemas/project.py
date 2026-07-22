@@ -8,6 +8,9 @@ class ProjectBase(BaseModel):
     image_url: Optional[str] = None
     demo_url: Optional[str] = None
     github_url: Optional[str] = None
+    roadmap: Optional[List[str]] = None
+    structure: Optional[List[str]] = None
+    next_steps: Optional[List[str]] = None
 
 class ProjectCreate(ProjectBase):
     pass

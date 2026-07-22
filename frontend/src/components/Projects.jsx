@@ -1,16 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Layers, AlertCircle } from 'lucide-react';
+import { ExternalLink, Github, Layers, AlertCircle, ChevronDown, ChevronUp } from 'lucide-react';
 
 const FALLBACK_PROJECTS = [
   {
     id: 1,
-    title: 'E-Commerce Microservices Platform',
-    description: 'A robust online shopping backend engineered using FastAPI microservices. It features complete order pipelines, inventory sync controls, and containerized deployment.',
-    tech_stack: ['FastAPI', 'PostgreSQL', 'Docker', 'Redis'],
-    image_url: '', // Empty triggers modern CSS gradient background placeholder
-    demo_url: 'https://demo.example.com',
-    github_url: 'https://github.com'
+    title: 'Real Estate Startup',
+    description: 'SaaS MVP to ingest property-management emails, classify them, create/update cases, and draft automated responses for human approval.',
+    tech_stack: ['Next.js', 'FastAPI', 'Supabase', 'TypeScript', 'PostgreSQL'],
+    image_url: '/leasepilot.png', // Path to the uploaded landing page screenshot
+    demo_url: 'https://prop.domec.dev/',
+    github_url: 'https://github.com/germanparra0202/real-estate-professional-project',
+    roadmap: [
+      'v1.0 Foundation (DONE): Singular account structure, core entities (Properties, Units, Tenants, Leases), decimal financial ledger.',
+      'v1.1 Operational Excellence (IN PROGRESS): Portfolio command center (KPI widgets), automated rent engine, migration import wedge.',
+      'v2.0 Enterprise & Hierarchy (TARGETED): Multi-Type Identity, PM parent-child relationships, scoped RLS access, aggregated KPI rollup.'
+    ],
+    structure: [
+      'apps/web – Next.js + TypeScript frontend (Tailwind-ready)',
+      'apps/api – FastAPI backend with modular router layout',
+      'packages/shared – Shared contracts and utilities (placeholder)'
+    ],
+    next_steps: [
+      'Wire Postmark inbound webhook to POST /webhooks/email/inbound.',
+      'Add schema/migration tooling for Postgres.',
+      'Implement auth module and shared identity resolver.',
+      'Connect Celery/Redis for async jobs and S3 for storage.'
+    ]
   },
   {
     id: 2,
@@ -36,6 +52,7 @@ export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [expandedProjectId, setExpandedProjectId] = useState(null);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -132,9 +149,76 @@ export default function Projects() {
                     <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-brand dark:group-hover:text-brand-light transition-colors font-display mb-2.5">
                       {project.title}
                     </h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
                       {project.description}
                     </p>
+
+                    {(project.roadmap || project.structure || project.next_steps) && (
+                      <div className="mb-4">
+                        <button
+                          onClick={() => setExpandedProjectId(expandedProjectId === project.id ? null : project.id)}
+                          className="flex items-center gap-1.5 text-xs font-bold text-brand hover:text-brand-dark dark:text-brand-light dark:hover:text-brand transition-colors group/btn"
+                        >
+                          {expandedProjectId === project.id ? 'Hide Specifications' : 'View Specifications & Roadmap'}
+                          {expandedProjectId === project.id ? (
+                            <ChevronUp className="w-3.5 h-3.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                          ) : (
+                            <ChevronDown className="w-3.5 h-3.5 group-hover/btn:translate-y-0.5 transition-transform" />
+                          )}
+                        </button>
+                        
+                        {expandedProjectId === project.id && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: 'auto' }}
+                            transition={{ duration: 0.3 }}
+                            className="mt-4 border-t border-slate-200/50 dark:border-slate-800/50 pt-4 space-y-4"
+                          >
+                            {project.roadmap && (
+                              <div>
+                                <h4 className="text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-2">Roadmap & Ship Sequence</h4>
+                                <ul className="space-y-1.5 text-xs text-slate-650 dark:text-slate-400">
+                                  {project.roadmap.map((item, idx) => (
+                                    <li key={idx} className="flex items-start gap-2">
+                                      <span className="w-1.5 h-1.5 rounded-full bg-brand dark:bg-brand-light mt-1.5 shrink-0" />
+                                      <span>{item}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+
+                            {project.structure && (
+                              <div>
+                                <h4 className="text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-2">Project Structure</h4>
+                                <ul className="space-y-1 text-xs text-slate-650 dark:text-slate-400 font-mono">
+                                  {project.structure.map((item, idx) => (
+                                    <li key={idx} className="flex items-start gap-2 bg-slate-50 dark:bg-slate-900/60 p-1.5 rounded-lg border border-slate-200/20 dark:border-slate-800/20">
+                                      <span className="w-1.5 h-1.5 rounded-full bg-teal dark:bg-teal-light mt-1.5 shrink-0" />
+                                      <span>{item}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+
+                            {project.next_steps && (
+                              <div>
+                                <h4 className="text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-2">Next Steps</h4>
+                                <ul className="space-y-1.5 text-xs text-slate-650 dark:text-slate-400">
+                                  {project.next_steps.map((item, idx) => (
+                                    <li key={idx} className="flex items-start gap-2">
+                                      <span className="w-1.5 h-1.5 rounded-full bg-teal dark:bg-teal-light mt-1.5 shrink-0" />
+                                      <span>{item}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+                          </motion.div>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   <div>
