@@ -2,6 +2,16 @@ import os
 from typing import List
 from pydantic import EmailStr
 
+# Load local .env file key-value pairs into environment variables
+env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), ".env")
+if os.path.exists(env_path):
+    with open(env_path, "r") as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, val = line.split("=", 1)
+                os.environ[key.strip()] = val.strip().strip('"').strip("'")
+
 class Settings:
     PROJECT_NAME: str = "Portfolio API"
     VERSION: str = "1.0.0"
@@ -24,6 +34,6 @@ class Settings:
     SMTP_PASSWORD: str = os.getenv("SMTP_PASSWORD", "your-app-specific-password")
     
     # Destination email where the contact form submissions will be sent
-    CONTACT_RECEIVER_EMAIL: str = os.getenv("CONTACT_RECEIVER_EMAIL", "your-receiving-email@gmail.com")
+    CONTACT_RECEIVER_EMAIL: str = os.getenv("CONTACT_RECEIVER_EMAIL", "germanparra321@gmail.com")
 
 settings = Settings()

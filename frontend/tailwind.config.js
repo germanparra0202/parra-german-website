@@ -8,11 +8,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Custom branding highlights that can be refined easily
         brand: {
-          light: '#6366F1', // Indigo 500
-          DEFAULT: '#4F46E5', // Indigo 600
-          dark: '#4338CA', // Indigo 700
+          light: '#3B82F6', // Electric Blue Light
+          DEFAULT: '#2563EB', // Electric Blue (#2563EB)
+          dark: '#1D4ED8', // Electric Blue Dark
+        },
+        teal: {
+          light: '#2DD4BF', // Sleek Teal Light
+          DEFAULT: '#0D9488', // Sleek Teal (#0D9488)
+          dark: '#0F766E', // Sleek Teal Dark
         }
       },
       fontFamily: {

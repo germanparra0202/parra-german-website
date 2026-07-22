@@ -109,7 +109,7 @@ export default function Projects() {
                 className="glass-card rounded-3xl overflow-hidden flex flex-col shadow-sm group"
               >
                 {/* Project Image Area */}
-                <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-tr from-brand-light/10 to-indigo-500/10 border-b border-slate-200/50 dark:border-slate-800/50 flex items-center justify-center">
+                <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-tr from-brand/10 to-teal/10 border-b border-slate-200/50 dark:border-slate-800/50 flex items-center justify-center">
                   
                   {project.image_url ? (
                     <img 
@@ -119,7 +119,7 @@ export default function Projects() {
                     />
                   ) : (
                     /* Elegant CSS Gradient Placeholder */
-                    <div className="absolute inset-0 bg-gradient-to-tr from-brand/10 to-indigo-600/5 dark:from-brand/20 dark:to-indigo-500/5 flex flex-col items-center justify-center p-4">
+                    <div className="absolute inset-0 bg-gradient-to-tr from-brand/10 to-teal/5 dark:from-brand/20 dark:to-teal/5 flex flex-col items-center justify-center p-4">
                       <Layers className="w-10 h-10 text-brand/35 mb-2 group-hover:scale-110 transition-transform duration-300" />
                       <span className="text-xs font-semibold tracking-wider text-slate-400 dark:text-slate-550 uppercase">DEMO PREVIEW</span>
                     </div>

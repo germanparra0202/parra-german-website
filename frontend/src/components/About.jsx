@@ -54,7 +54,7 @@ export default function About() {
           >
             <div className="relative w-full max-w-sm">
               {/* Outer frame styling */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-brand to-indigo-500 rounded-3xl -rotate-3 scale-[1.02] opacity-10 dark:opacity-20 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-brand to-teal rounded-3xl -rotate-3 scale-[1.02] opacity-10 dark:opacity-20 pointer-events-none"></div>
               
               <div className="relative aspect-square rounded-3xl overflow-hidden glass-panel p-3 shadow-lg">
                 <div className="w-full h-full rounded-2xl bg-gradient-to-tr from-slate-100 to-slate-200 dark:from-slate-850 dark:to-slate-800 flex items-center justify-center border border-slate-200/40 dark:border-slate-800/40 overflow-hidden">
@@ -80,23 +80,28 @@ export default function About() {
             className="lg:col-span-7 flex flex-col justify-center"
           >
             <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-4 font-display">
-              {/* REPLACE: Subtitle summary */}
-              Engineering digital products that align scalability with intuitive design.
+              Building scalable, data-driven solutions to complex business problems.
             </h3>
             
             <div className="space-y-4 text-slate-650 dark:text-slate-400 leading-relaxed text-base">
               <p>
-                {/* REPLACE: Bio Paragraph 1 */}
-                Hello! I am a passionate developer who enjoys designing systems that are simple, secure, and fast. My journey in software engineering began years ago, and since then I have had the privilege of writing production software for innovative clients, start-ups, and technology businesses.
+                I’m an L2 Data Analyst at Visa with a strong foundation in Python, SQL, and computer science, focused on building scalable, data-driven solutions to complex business problems.
               </p>
               <p>
-                {/* REPLACE: Bio Paragraph 2 */}
-                I believe in writing clean, well-tested code that communicates its purpose clearly. On the backend, I design reliable architectures with python and FastAPI, focusing on performance, data integrity, and documentation. On the frontend, I create beautiful, responsive user interfaces in React using flexible CSS strategies.
+                In my current role, I design and automate data workflows, build data models and dashboards, and work on ML/AI-related initiatives to support data-informed decision-making—particularly within Acquired Entities and Technology Management Operations. I regularly work with large datasets, optimize queries, and translate analytical insights into actionable outcomes for cross-functional teams.
               </p>
               <p>
-                {/* REPLACE: Bio Paragraph 3 */}
-                Outside of development, I love mentoring, reading about distributed database architectures, contributing to open-source code repositories, and exploring nature.
+                I studied Computer Science at the University of Notre Dame, with a minor in Engineering Corporate Practice, where I developed a strong interest in applying software engineering principles to real-world systems. Along the way, I gained hands-on experience as a Backend Developer at Ombre and through internships at IBM and Visa, working on data pipelines, backend components, and collaborative engineering efforts.
               </p>
+              <p>
+                I’m especially interested in roles at the intersection of software engineering, quantitative problem-solving, and financial technology. My interests include data engineering, algorithmic problem-solving, scalable systems, and performance-focused development.
+              </p>
+              <div className="pt-2">
+                <span className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block mb-2">Core Skills</span>
+                <p className="text-sm font-medium text-brand dark:text-brand-light">
+                  Python, SQL, Data Structures & Algorithms, Statistics & Probability, Data Analysis, Git, ETL, Data Modeling
+                </p>
+              </div>
             </div>
 
             {/* Quick Facts Card Grid */}

@@ -4,10 +4,10 @@ import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "German is an outstanding software engineer. He took ownership of our backend refactor using FastAPI, implementing schemas and optimization routes that solved our database load issues. His attention to code quality and documentation is exceptional.",
-    name: "Sarah Jenkins",
-    title: "Engineering Manager",
-    company: "TechCorp Solutions"
+    quote: "German is an outstanding software engineer who consistently demonstrates strong technical expertise, ownership, and attention to detail. He took the lead on our backend refactor using FastAPI, designing robust schemas, optimizing API routes, and implementing performance improvements that significantly reduced database load and improved overall system responsiveness. Beyond his technical skills, German places a strong emphasis on writing clean, maintainable code and thorough documentation, making it easy for the rest of the team to collaborate and build upon his work. He's proactive in identifying opportunities for improvement, communicates effectively, and can be relied upon to deliver high-quality solutions. Any engineering team would benefit from his technical ability, professionalism, and commitment to excellence.",
+    name: "Domenico Meconi",
+    title: "Software Engineer",
+    company: "Apple"
   },
   {
     quote: "Working with German on our responsive client portals was a breeze. He has a rare ability to bridge the gap between complex backend architectures and beautiful, interactive frontend design. Highly recommend him for full-stack projects.",
