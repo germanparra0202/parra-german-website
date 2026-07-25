@@ -138,15 +138,9 @@ export default function Hero() {
               
               {/* Headshot container */}
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-3xl overflow-hidden glass-panel p-4 flex items-center justify-center group shadow-xl">
-                {/* Profile Placeholder Image / SVG */}
+                {/* Profile Image Wrapper */}
                 <div className="w-full h-full rounded-2xl bg-gradient-to-br from-brand/10 to-teal/10 flex items-center justify-center border border-slate-200/50 dark:border-slate-800/50 overflow-hidden relative">
-                  
-                  {/* REPLACE: Swap the svg tag below with an <img> tag for your headshot photo
-                      Example: <img src="/assets/headshot.jpg" alt="German Parra" className="w-full h-full object-cover" />
-                  */}
-                  <svg className="w-1/2 h-1/2 text-brand/40 group-hover:scale-110 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
+                  <img src="/assets/headshot.jpg" alt="German Parra" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   
                   {/* Decorative Glass Overlay */}
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/60 to-transparent p-4 text-center">
