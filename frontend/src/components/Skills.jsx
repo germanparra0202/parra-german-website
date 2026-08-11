@@ -19,7 +19,7 @@ const skillCategories = [
   {
     title: 'Frameworks & Libraries',
     icon: Layout,
-    color: 'border-indigo-500/20 text-indigo-500 bg-indigo-500/5',
+    color: 'border-teal-500/20 text-teal-650 dark:text-teal-400 bg-teal-500/5',
     skills: [
       { name: 'React', level: 'Expert' },
       { name: 'FastAPI', level: 'Expert' },

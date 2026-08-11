@@ -37,7 +37,7 @@ export default function Hero() {
     >
       {/* Decorative gradient glowing spheres */}
       <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-brand/20 rounded-full blur-[80px] pointer-events-none"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-teal/10 rounded-full blur-[100px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -61,7 +61,7 @@ export default function Hero() {
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white leading-none tracking-tight mb-4"
             >
               Hi, I'm{' '}
-              <span className="bg-gradient-to-r from-brand-light to-indigo-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand to-teal bg-clip-text text-transparent">
                 {/* REPLACE: Your Name */}
                 German Parra
               </span>
@@ -113,13 +113,13 @@ export default function Hero() {
               className="flex justify-center lg:justify-start items-center gap-5 mt-10 text-slate-500 dark:text-slate-400"
             >
               {/* REPLACE: Your Social Handles */}
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand dark:hover:text-brand-light transition-colors">
+              <a href="https://github.com/germanparra0202" target="_blank" rel="noopener noreferrer" className="hover:text-brand dark:hover:text-brand-light transition-colors">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand dark:hover:text-brand-light transition-colors">
+              <a href="https://www.linkedin.com/in/germanparra02/" target="_blank" rel="noopener noreferrer" className="hover:text-brand dark:hover:text-brand-light transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="mailto:german@example.com" className="hover:text-brand dark:hover:text-brand-light transition-colors">
+              <a href="mailto:germanparra321@gmail.com" className="hover:text-brand dark:hover:text-brand-light transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
             </motion.div>
@@ -134,19 +134,13 @@ export default function Hero() {
           >
             <div className="relative">
               {/* Spinning or floating decorative borders */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-brand to-indigo-500 rounded-3xl rotate-6 blur-md opacity-20 dark:opacity-30 scale-105 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-brand to-teal rounded-3xl rotate-6 blur-md opacity-20 dark:opacity-30 scale-105 pointer-events-none"></div>
               
               {/* Headshot container */}
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-3xl overflow-hidden glass-panel p-4 flex items-center justify-center group shadow-xl">
-                {/* Profile Placeholder Image / SVG */}
-                <div className="w-full h-full rounded-2xl bg-gradient-to-br from-brand/10 to-indigo-500/10 flex items-center justify-center border border-slate-200/50 dark:border-slate-800/50 overflow-hidden relative">
-                  
-                  {/* REPLACE: Swap the svg tag below with an <img> tag for your headshot photo
-                      Example: <img src="/assets/headshot.jpg" alt="German Parra" className="w-full h-full object-cover" />
-                  */}
-                  <svg className="w-1/2 h-1/2 text-brand/40 group-hover:scale-110 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
+                {/* Profile Image Wrapper */}
+                <div className="w-full h-full rounded-2xl bg-gradient-to-br from-brand/10 to-teal/10 flex items-center justify-center border border-slate-200/50 dark:border-slate-800/50 overflow-hidden relative">
+                  <img src="/assets/headshot.jpg" alt="German Parra" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   
                   {/* Decorative Glass Overlay */}
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/60 to-transparent p-4 text-center">

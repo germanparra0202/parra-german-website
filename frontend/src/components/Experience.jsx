@@ -4,36 +4,94 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react';
 
 const experiences = [
   {
-    role: 'Senior Software Engineer',
-    company: 'TechCorp Solutions',
-    period: 'Jan 2024 - Present',
-    location: 'San Francisco, CA (Hybrid)',
+    role: 'L2 Data Analyst',
+    company: 'Visa',
+    period: 'May 2022 - Present',
+    location: 'Austin, Texas, United States (Hybrid)',
     description: [
-      'Led the transition of monolithic API services to microservices using FastAPI, decreasing API response times by 35%.',
-      'Designed and engineered high-performance dashboard interfaces using React and Tailwind CSS, increasing user engagement metrics by 20%.',
-      'Mentored 4 junior engineers, established code quality standards, and automated testing coverage benchmarks using CI/CD tools.'
+      'Led the design, development, and launch of a web-based BI platform delivering critical operational and performance metrics to senior leadership, including the CTO.',
+      'Architected the platform as a full-stack web application after evaluating stakeholder requirements, performance constraints, and scalability needs.',
+      'Recruited and mentored two software engineering interns and collaborated with a full-time engineer to drive development and ensure timely delivery.',
+      'Acted as both product owner and hands-on software engineer on a lean team, contributing directly to application development, data integration, and performance optimization.',
+      'Achieved a 10–20× performance improvement over legacy BI solutions through system redesign, query optimization, and application-level testing.',
+      'Built and maintained dashboards and analytical models on top of large-scale datasets (millions of rows) to support capacity planning, operational monitoring, and executive reporting.',
+      'Ran recurring operational reviews, including Acquired Entities performance and uptime, OKR tracking for the VP of Operations & Infrastructure, and internal metrics covering capacity management, audit readiness, and GenAI cost optimization.',
+      'Developed and deployed internal applications using Visa’s hosting and infrastructure platform (Sentinel Grid), analogous to AWS/Azure, managing application hosting and integration with enterprise services.',
+      'Worked on applied machine learning models to automate VM resize approval workflows, projected to save ~800 engineering hours per month by reducing manual review effort.'
     ]
   },
   {
-    role: 'Full Stack Developer',
-    company: 'Innovation Web Studio',
-    period: 'Jun 2021 - Dec 2023',
-    location: 'Austin, TX (Remote)',
+    role: 'Bloomberg Tech Lab Fellow',
+    company: 'Bloomberg LP',
+    period: 'Nov 2022',
+    location: 'San Francisco, California, United States',
     description: [
-      'Architected complex relational databases with PostgreSQL/SQLAlchemy, implementing data sync caching which lowered database load by 40%.',
-      'Implemented real-time client communication pipelines with WebSockets, delivering low-latency updates for multi-user collaboration widgets.',
-      'Developed pixel-perfect responsive layouts across multiple customer dashboards, maintaining accessible semantic markup (ARIA/WCAG).'
+      'Selected as 1 of 28 engineers nationwide to attend an intensive three-day technical program.',
+      'Collaborated in a small team to design and build a Python-based portfolio management system, implementing core functionality for asset tracking, allocation logic, and performance analysis.',
+      'Applied object-oriented design principles and structured problem-solving to deliver a working prototype within a constrained timeline.',
+      'Engaged with senior engineering leadership, including discussions with Bloomberg’s CTO, gaining exposure to large-scale financial systems and product architecture (e.g., the Terminal).'
     ]
   },
   {
-    role: 'Associate Developer',
-    company: 'Startup Lab Labs',
-    period: 'Jan 2020 - May 2021',
-    location: 'Denver, CO (On-site)',
+    role: 'Back End Developer',
+    company: 'Ombre',
+    period: 'Jan 2022 - Apr 2022',
+    location: 'Palo Alto, California, United States (Internship)',
     description: [
-      'Built reusable frontend components utilizing React functional hooks, reducing redundant styling code sheets by 25%.',
-      'Created CRUD API endpoints in FastAPI, conducting unit test coverage to ensure API security and data schema validation.',
-      'Integrated payment gateways (Stripe) and authentication pipelines, validating payloads with Pydantic schemas.'
+      'Contributed to backend development of a production web application built with Flask, supporting microbiome testing workflows and customer-facing functionality.',
+      'Designed and implemented relational database schemas, structured data models, and performed bulk data ingestion via CSV pipelines to support core application features.',
+      'Developed backend logic in Python, building and maintaining essential application functionality and API endpoints.',
+      'Implemented and supported authentication workflows integrating Flask-based systems with Shopify, ensuring secure user access and transaction handling.',
+      'Collaborated cross-functionally in product discussions, contributing to feature scoping, technical feasibility assessments, and implementation planning.',
+      'Provided limited front-end support using JavaScript, assisting with UI-related functionality tied to backend services.'
+    ]
+  },
+  {
+    role: 'Full-stack Developer',
+    company: 'IBM',
+    period: 'Jun 2021 - Apr 2022',
+    location: 'Rochester, Minnesota, United States',
+    description: [
+      'Served as Scrum Master for a cross-functional engineering team, leading daily standups, tracking blockers, and coordinating sprint progress to maintain delivery velocity.',
+      'Developed an internal automation tool using Electron, React, JavaScript, and HTML to streamline repetitive engineering workflows and reduce manual task overhead.',
+      'Built backend automation components using Python, Ansible, C++, and macro programs, integrating with enterprise systems running on IBM i and AIX environments.',
+      'Contributed to systems-level scripting and infrastructure automation to improve efficiency and reliability across engineering processes.',
+      'Collaborated with senior engineers to design and implement solutions aligned with enterprise architecture and operational constraints.'
+    ]
+  },
+  {
+    role: 'Career Leader',
+    company: 'Management Leadership for Tomorrow',
+    period: 'Mar 2021 - Dec 2022',
+    location: 'Notre Dame, Indiana, United States (Part-time)',
+    description: [
+      'Selected for an 18-month competitive mentorship program focused on leadership development, strategic thinking, and career advancement.',
+      'Conducted structured company analyses using frameworks such as SWOT and Business Model Canvas to evaluate competitive positioning and operational strategy.',
+      'Engaged with industry leaders across the United States to gain exposure to executive decision-making and organizational leadership practices.',
+      'Strengthened communication, emotional intelligence, and professional development skills through guided mentorship and collaborative workshops.',
+      'Researched companies and market trends to inform career strategy and long-term professional growth.'
+    ]
+  },
+  {
+    role: 'Bookstore Helper',
+    company: 'Nogales High School',
+    period: 'May 2018 - Aug 2018',
+    location: 'Nogales, Arizona',
+    description: [
+      'Helped clean the school’s textbooks and aided in the student registration in a full-time capacity.'
+    ]
+  },
+  {
+    role: 'BYTE Intern',
+    company: 'Border Youth Tennis Exchange',
+    period: 'Sep 2016 - Nov 2017',
+    location: 'Nogales, Sonora, Mexico',
+    description: [
+      'BYTE Program Mission: Enhance elementary students’ technological and tennis skills, with a focus on supporting underprivileged children.',
+      'Program Approach: Combine tennis and technology to encourage students to develop a strong passion for learning and school.',
+      'Leadership Role: Led groups of children in structured activities.',
+      'Technology Instruction: Taught students how to use computers and basic technological tools.',
+      'Athletic Development: Helped students improve their tennis skills through guided practice and coaching.'
     ]
   }
 ];

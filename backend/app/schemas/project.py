@@ -8,6 +8,9 @@ class ProjectBase(BaseModel):
     image_url: Optional[str] = None
     demo_url: Optional[str] = None
     github_url: Optional[str] = None
+    roadmap: Optional[List[str]] = None
+    structure: Optional[List[str]] = None
+    next_steps: Optional[List[str]] = None
 
 class ProjectCreate(ProjectBase):
     pass
@@ -25,6 +28,6 @@ class Project(ProjectBase):
                 "tech_stack": ["React", "FastAPI", "PostgreSQL"],
                 "image_url": "https://example.com/project1.png",
                 "demo_url": "https://demo.example.com",
-                "github_url": "https://github.com/user/project1"
+                "github_url": "https://github.com/germanparra0202"
             }
         }

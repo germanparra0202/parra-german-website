@@ -81,7 +81,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-12">
           {/* Logo / Name */}
           <div className="flex-shrink-0 cursor-pointer" onClick={() => handleScrollTo('home')}>
-            <span className="font-display font-extrabold text-2xl bg-gradient-to-r from-brand-light to-indigo-500 bg-clip-text text-transparent">
+            <span className="font-display font-extrabold text-2xl bg-gradient-to-r from-brand to-teal bg-clip-text text-transparent">
               {/* REPLACE: Put your name or logo initials here */}
               German.Dev
             </span>

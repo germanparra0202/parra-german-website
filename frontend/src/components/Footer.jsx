@@ -34,7 +34,7 @@ export default function Footer() {
 
           {/* Logo Name & Small Tagline */}
           <div className="text-center md:text-left">
-            <span className="font-display font-extrabold text-xl bg-gradient-to-r from-brand-light to-indigo-500 bg-clip-text text-transparent">
+            <span className="font-display font-extrabold text-xl bg-gradient-to-r from-brand to-teal bg-clip-text text-transparent">
               German.Dev
             </span>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-2">
@@ -55,13 +55,13 @@ export default function Footer() {
 
           {/* Social icons */}
           <div className="flex justify-center md:justify-end items-center gap-5 text-slate-500 dark:text-slate-400">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand dark:hover:text-brand-light transition-colors">
+            <a href="https://github.com/germanparra0202" target="_blank" rel="noopener noreferrer" className="hover:text-brand dark:hover:text-brand-light transition-colors">
               <Github className="w-5 h-5" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand dark:hover:text-brand-light transition-colors">
+            <a href="https://www.linkedin.com/in/germanparra02/" target="_blank" rel="noopener noreferrer" className="hover:text-brand dark:hover:text-brand-light transition-colors">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="mailto:german@example.com" className="hover:text-brand dark:hover:text-brand-light transition-colors">
+            <a href="mailto:germanparra321@gmail.com" className="hover:text-brand dark:hover:text-brand-light transition-colors">
               <Mail className="w-5 h-5" />
             </a>
           </div>

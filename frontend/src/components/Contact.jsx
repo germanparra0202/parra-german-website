@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Github, Linkedin, Download, Send, CheckCircle2, AlertTriangle } from 'lucide-react';
+import { Mail, Github, Linkedin, Download, Send, CheckCircle2, AlertTriangle, Phone } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -92,7 +92,7 @@ export default function Contact() {
               <div className="space-y-4">
                 {/* Email link */}
                 <a 
-                  href="mailto:german@example.com" 
+                  href="mailto:germanparra321@gmail.com" 
                   className="flex items-center gap-4 p-4 rounded-2xl bg-slate-55/60 dark:bg-slate-900/40 border border-slate-200/50 dark:border-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-850 hover:border-brand-light/30 transition-all duration-300 group"
                 >
                   <div className="p-3 bg-brand/10 dark:bg-brand/20 text-brand dark:text-brand-light rounded-xl group-hover:scale-105 transition-transform duration-350">
@@ -100,13 +100,27 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 dark:text-slate-500 font-medium">Email Me At</p>
-                    <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">german@example.com</p>
+                    <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">germanparra321@gmail.com</p>
+                  </div>
+                </a>
+
+                {/* Phone link */}
+                <a 
+                  href="tel:+15203138639" 
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-slate-55/60 dark:bg-slate-900/40 border border-slate-200/50 dark:border-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-850 hover:border-brand-light/30 transition-all duration-300 group"
+                >
+                  <div className="p-3 bg-brand/10 dark:bg-brand/20 text-brand dark:text-brand-light rounded-xl group-hover:scale-105 transition-transform duration-350">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-slate-400 dark:text-slate-500 font-medium">Call Me At</p>
+                    <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">+1 (520) 313-8639</p>
                   </div>
                 </a>
 
                 {/* GitHub link */}
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/germanparra0202" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-2xl bg-slate-55/60 dark:bg-slate-900/40 border border-slate-200/50 dark:border-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-850 hover:border-brand-light/30 transition-all duration-300 group"
@@ -122,7 +136,7 @@ export default function Contact() {
 
                 {/* LinkedIn link */}
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/germanparra02/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-2xl bg-slate-55/60 dark:bg-slate-900/40 border border-slate-200/50 dark:border-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-850 hover:border-brand-light/30 transition-all duration-300 group"
@@ -215,7 +229,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     disabled={status === 'loading'}
-                    placeholder="german@example.com"
+                    placeholder="germanparra321@gmail.com"
                     className="w-full px-4 py-3.5 bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/60 rounded-xl text-slate-950 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/40 dark:focus:ring-brand-light/35 focus:border-brand dark:focus:border-brand-light transition-all text-sm"
                   />
                 </div>
