@@ -39,7 +39,7 @@ SEED_PROJECTS = [
     "tech_stack": ["React", "Tailwind CSS", "Framer Motion", "Zustand"],
     "image_url": "",
     "demo_url": "https://demo.example.com",
-    "github_url": "https://github.com/your-username/task-dashboard"
+    "github_url": "https://github.com/germanparra0202"
   },
   {
     "id": 3,
@@ -48,7 +48,7 @@ SEED_PROJECTS = [
     "tech_stack": ["FastAPI", "WebSockets", "React", "Chart.js"],
     "image_url": "",
     "demo_url": "https://demo.example.com",
-    "github_url": "https://github.com/your-username/iot-telemetry"
+    "github_url": "https://github.com/germanparra0202"
   }
 ]
 

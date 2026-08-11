@@ -28,6 +28,6 @@ class Project(ProjectBase):
                 "tech_stack": ["React", "FastAPI", "PostgreSQL"],
                 "image_url": "https://example.com/project1.png",
                 "demo_url": "https://demo.example.com",
-                "github_url": "https://github.com/user/project1"
+                "github_url": "https://github.com/germanparra0202"
             }
         }

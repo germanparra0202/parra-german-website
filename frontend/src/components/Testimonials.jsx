@@ -10,16 +10,24 @@ const testimonials = [
     company: "Apple"
   },
   {
-    quote: "Working with German on our responsive client portals was a breeze. He has a rare ability to bridge the gap between complex backend architectures and beautiful, interactive frontend design. Highly recommend him for full-stack projects.",
-    name: "Marcus Aurelius",
-    title: "Lead Product Designer",
-    company: "Innovation Web Studio"
+    quote: `German is an outstanding software engineer who consistently demonstrates strong technical expertise, ownership, and attention to detail. He took the lead on building our company website entirely from scratch, handling everything from design and frontend development to backend implementation and deployment, delivering a polished, fully functional site that our startup still relies on today.
+
+Beyond his technical skills, German places a strong emphasis on writing clean, well-structured code and communicating clearly throughout the process, making him easy to collaborate with despite my own demanding schedule as a researcher. He's proactive in identifying what the project needed, made smart technical decisions independently, and can be relied upon to deliver high-quality work without requiring oversight.
+
+Any engineering team would benefit from his technical ability, professionalism, and commitment to excellence.`,
+    name: "Pedro Alcaraz",
+    title: "PhD Graduate in Optical Physics",
+    company: ""
   },
   {
-    quote: "German joined our early-stage project team and brought instant architecture stability. He set up our API models, integrated payment logic, and shipped features fast. He's collaborative, curious, and extremely skilled.",
-    name: "Elena Rostova",
-    title: "Co-Founder & CTO",
-    company: "Startup Lab Labs"
+    quote: `I've had the pleasure of working alongside German on architecture and system design, and I can say without hesitation that he is one of the strongest engineers I've collaborated with. He approached the project with real ownership, digging into the architecture early on and making thoughtful decisions that held up well as the scope grew.
+
+What stood out most was his debugging instinct and code quality. German has a knack for tracing issues back to their root cause quickly, and the code he writes is consistently clean and easy for others to pick up — something I don't take for granted, having seen how much time can be lost untangling code that wasn't written with the next person in mind. He's also a genuinely good collaborator: responsive, open to feedback, and willing to push back respectfully when he has a better idea.
+
+I'd recommend German confidently for any engineering role — he consistently operates at a high bar, both technically and in how he works with others.`,
+    name: "Zachary Chua",
+    title: "Software Engineer",
+    company: "Amazon"
   }
 ];
 
@@ -100,10 +108,15 @@ export default function Testimonials() {
                 {testimonials[activeIndex].name}
               </h4>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                {testimonials[activeIndex].title} at{' '}
-                <span className="font-semibold text-brand dark:text-brand-light">
-                  {testimonials[activeIndex].company}
-                </span>
+                {testimonials[activeIndex].title}
+                {testimonials[activeIndex].company && (
+                  <>
+                    {' at '}
+                    <span className="font-semibold text-brand dark:text-brand-light">
+                      {testimonials[activeIndex].company}
+                    </span>
+                  </>
+                )}
               </p>
             </div>
 

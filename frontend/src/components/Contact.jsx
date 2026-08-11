@@ -120,7 +120,7 @@ export default function Contact() {
 
                 {/* GitHub link */}
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/germanparra0202" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-2xl bg-slate-55/60 dark:bg-slate-900/40 border border-slate-200/50 dark:border-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-850 hover:border-brand-light/30 transition-all duration-300 group"
@@ -136,7 +136,7 @@ export default function Contact() {
 
                 {/* LinkedIn link */}
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/germanparra02/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-2xl bg-slate-55/60 dark:bg-slate-900/40 border border-slate-200/50 dark:border-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-850 hover:border-brand-light/30 transition-all duration-300 group"

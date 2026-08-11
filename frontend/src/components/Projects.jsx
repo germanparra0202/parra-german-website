@@ -35,7 +35,7 @@ const FALLBACK_PROJECTS = [
     tech_stack: ['React', 'Tailwind CSS', 'Framer Motion', 'Zustand'],
     image_url: '',
     demo_url: 'https://demo.example.com',
-    github_url: 'https://github.com'
+    github_url: 'https://github.com/germanparra0202'
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const FALLBACK_PROJECTS = [
     tech_stack: ['FastAPI', 'WebSockets', 'React', 'Chart.js'],
     image_url: '',
     demo_url: 'https://demo.example.com',
-    github_url: 'https://github.com'
+    github_url: 'https://github.com/germanparra0202'
   }
 ];
 

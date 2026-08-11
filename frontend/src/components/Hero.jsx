@@ -113,10 +113,10 @@ export default function Hero() {
               className="flex justify-center lg:justify-start items-center gap-5 mt-10 text-slate-500 dark:text-slate-400"
             >
               {/* REPLACE: Your Social Handles */}
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand dark:hover:text-brand-light transition-colors">
+              <a href="https://github.com/germanparra0202" target="_blank" rel="noopener noreferrer" className="hover:text-brand dark:hover:text-brand-light transition-colors">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand dark:hover:text-brand-light transition-colors">
+              <a href="https://www.linkedin.com/in/germanparra02/" target="_blank" rel="noopener noreferrer" className="hover:text-brand dark:hover:text-brand-light transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="mailto:germanparra321@gmail.com" className="hover:text-brand dark:hover:text-brand-light transition-colors">
