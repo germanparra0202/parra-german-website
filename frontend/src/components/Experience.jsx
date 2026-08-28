@@ -9,15 +9,12 @@ const experiences = [
     period: 'May 2022 - Present',
     location: 'Austin, Texas, United States (Hybrid)',
     description: [
-      'Led the design, development, and launch of a web-based BI platform delivering critical operational and performance metrics to senior leadership, including the CTO.',
-      'Architected the platform as a full-stack web application after evaluating stakeholder requirements, performance constraints, and scalability needs.',
-      'Recruited and mentored two software engineering interns and collaborated with a full-time engineer to drive development and ensure timely delivery.',
-      'Acted as both product owner and hands-on software engineer on a lean team, contributing directly to application development, data integration, and performance optimization.',
-      'Achieved a 10–20× performance improvement over legacy BI solutions through system redesign, query optimization, and application-level testing.',
-      'Built and maintained dashboards and analytical models on top of large-scale datasets (millions of rows) to support capacity planning, operational monitoring, and executive reporting.',
-      'Ran recurring operational reviews, including Acquired Entities performance and uptime, OKR tracking for the VP of Operations & Infrastructure, and internal metrics covering capacity management, audit readiness, and GenAI cost optimization.',
-      'Developed and deployed internal applications using Visa’s hosting and infrastructure platform (Sentinel Grid), analogous to AWS/Azure, managing application hosting and integration with enterprise services.',
-      'Worked on applied machine learning models to automate VM resize approval workflows, projected to save ~800 engineering hours per month by reducing manual review effort.'
+      'Spearheaded AI enablement initiatives across infrastructure and operations teams by developing full-stack internal applications that automated procurement, reporting, and operational workflows.',
+      'Led executive operational governance meetings with SVPs and CTO leadership covering M&A uptime/performance, incident management, quarterly OKRs, cloud metrics, audit reporting, and demand management.',
+      'Built and deployed 10+ executive-facing dashboards and analytics platforms using Python, SQL, React, Power BI, and REST APIs to monitor VisaNet volumes, operational health, and enterprise performance metrics.',
+      'Consolidated 15+ operational data sources into centralized MSSQL/Azure databases, enabling scalable enterprise reporting while reducing technical debt and manual Excel-based processes.',
+      'Developed internal BI platforms and data pipelines integrating cloud, infrastructure, and operational metrics to improve decision-making, reporting automation, and leadership visibility.',
+      'Partnered with leadership on AI governance and cloud cost optimization initiatives, helping establish scalable operational and reporting standards.'
     ]
   },
   {
