@@ -18,18 +18,6 @@ const experiences = [
     ]
   },
   {
-    role: 'Bloomberg Tech Lab Fellow',
-    company: 'Bloomberg LP',
-    period: 'Nov 2022',
-    location: 'San Francisco, California, United States',
-    description: [
-      'Selected as 1 of 28 engineers nationwide to attend an intensive three-day technical program.',
-      'Collaborated in a small team to design and build a Python-based portfolio management system, implementing core functionality for asset tracking, allocation logic, and performance analysis.',
-      'Applied object-oriented design principles and structured problem-solving to deliver a working prototype within a constrained timeline.',
-      'Engaged with senior engineering leadership, including discussions with Bloomberg’s CTO, gaining exposure to large-scale financial systems and product architecture (e.g., the Terminal).'
-    ]
-  },
-  {
     role: 'Back End Developer',
     company: 'Ombre',
     period: 'Jan 2022 - Apr 2022',
@@ -54,6 +42,18 @@ const experiences = [
       'Built backend automation components using Python, Ansible, C++, and macro programs, integrating with enterprise systems running on IBM i and AIX environments.',
       'Contributed to systems-level scripting and infrastructure automation to improve efficiency and reliability across engineering processes.',
       'Collaborated with senior engineers to design and implement solutions aligned with enterprise architecture and operational constraints.'
+    ]
+  },
+  {
+    role: 'Bloomberg Tech Lab Fellow',
+    company: 'Bloomberg LP',
+    period: 'Nov 2022',
+    location: 'San Francisco, California, United States',
+    description: [
+      'Selected as 1 of 28 engineers nationwide to attend an intensive three-day technical program.',
+      'Collaborated in a small team to design and build a Python-based portfolio management system, implementing core functionality for asset tracking, allocation logic, and performance analysis.',
+      'Applied object-oriented design principles and structured problem-solving to deliver a working prototype within a constrained timeline.',
+      'Engaged with senior engineering leadership, including discussions with Bloomberg’s CTO, gaining exposure to large-scale financial systems and product architecture (e.g., the Terminal).'
     ]
   },
   {
