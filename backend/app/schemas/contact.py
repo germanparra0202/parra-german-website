@@ -1,4 +1,10 @@
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, Field
+
+try:
+    import email_validator  # type: ignore
+    from pydantic import EmailStr
+except ImportError:
+    EmailStr = str  # Fallback if email-validator is not installed
 
 class ContactBase(BaseModel):
     name: str = Field(..., min_length=1, max_length=100, description="Your full name")

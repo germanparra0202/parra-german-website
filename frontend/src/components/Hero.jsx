@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, FileText, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Download, FileText, Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Hero() {
   const containerVariants = {
@@ -85,7 +85,7 @@ export default function Hero() {
 
             <motion.div
               variants={itemVariants}
-              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
+              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 flex-wrap"
             >
               <button
                 onClick={handleScrollToContact}
@@ -104,6 +104,15 @@ export default function Hero() {
                 className="w-full sm:w-auto px-8 py-3.5 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 border border-slate-200 dark:border-slate-800 rounded-xl font-medium flex items-center justify-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-850 hover:border-slate-350 dark:hover:border-slate-700 transition-all duration-300"
               >
                 View Experience
+              </a>
+
+              <a
+                href="/resume.pdf"
+                download="German_Parra_Resume.pdf"
+                className="w-full sm:w-auto px-6 py-3.5 bg-slate-900 dark:bg-white text-white dark:text-slate-950 hover:bg-slate-850 dark:hover:bg-slate-100 rounded-xl text-sm font-semibold shadow-md hover:shadow-lg flex items-center justify-center gap-2.5 transition-all duration-300"
+              >
+                <Download className="w-4.5 h-4.5" />
+                <span>Download Resume (PDF)</span>
               </a>
             </motion.div>
 

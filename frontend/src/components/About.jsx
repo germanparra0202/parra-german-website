@@ -11,7 +11,7 @@ export default function About() {
   const stats = [
     { label: 'Location', value: 'Austin, Texas', icon: MapPin },
     { label: 'Experience', value: '3+ Years', icon: Calendar },
-    { label: 'Current Role', value: 'L4 Data Analyst', icon: Briefcase },
+    { label: 'Current Role', value: 'L5 Data Analyst', icon: Briefcase },
     { label: 'Specialization', value: 'API & UI Architectures', icon: Award },
   ];
 
@@ -79,7 +79,7 @@ export default function About() {
             
             <div className="space-y-4 text-slate-650 dark:text-slate-400 leading-relaxed text-base">
               <p>
-                I’m an L4 Data Analyst at Visa with a strong foundation in Python, SQL, and computer science, focused on building scalable, data-driven solutions to complex business problems.
+                I’m an L5 Data Analyst at Visa with a strong foundation in Python, SQL, and computer science, focused on building scalable, data-driven solutions to complex business problems.
               </p>
               <p>
                 In my current role, I design and automate data workflows, build data models and dashboards, and work on ML/AI-related initiatives to support data-informed decision-making—particularly within Acquired Entities and Technology Management Operations. I regularly work with large datasets, optimize queries, and translate analytical insights into actionable outcomes for cross-functional teams.

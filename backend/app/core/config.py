@@ -1,6 +1,5 @@
 import os
 from typing import List
-from pydantic import EmailStr
 
 # Load local .env file key-value pairs into environment variables
 env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), ".env")
